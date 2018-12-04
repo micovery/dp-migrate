@@ -1,0 +1,43 @@
+{
+  "name": "dp-migrate",
+  "version": "1.0.0",
+  "description": "This module assists with the migration, analysis and decomposition of Datapower services.",
+  "main": "index.js",
+  "author": {
+    "name": "Miguel Mendoza",
+    "email": "miguelmendoza@google.com"
+  },
+  "contributors": [{
+    "name": "Maruti Chand",
+    "email": "marutichandc@google.com"
+  }],
+  "license": "ISC",
+  "bin": {
+    "dp-migrate": "./lib/dp-migrate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micovery/dp-migrate.git"
+  },
+  "dependencies": {
+    "decompress": "^4.2.0",
+    "easysoap": "^2.0.2",
+    "exceljs": "^1.6.3",
+    "json-to-pretty-yaml": "^1.2.2",
+    "lodash": "^4.17.11",
+    "log4js": "^3.0.6",
+    "mkdirp": "^0.5.1",
+    "replace-in-file": "^3.4.4",
+    "then-fs": "^2.0.0",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.27",
+    "yamljs": "^0.3.0",
+    "yargs": "^12.0.5"
+  },
+  "scripts": {
+    "build": "pkg -o dist/dp-migrate-1.0.0 --targets node12-macos-x64,node12-win-x64,node12-linux-x64 . "
+  },
+  "devDependencies": {
+    "pkg": "^4.4.9"
+  }
+}
